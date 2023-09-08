@@ -100,6 +100,11 @@
             color: white;
         }
 
+
+        .last {
+            margin-bottom: 30px;
+        }
+
     </style>
 </head>
 
@@ -335,7 +340,7 @@ const quizContainer = document.getElementById("newer");
                     <li ${questionObj.selected === 'a' ? 'class="selected-answer"' : (questionObj.correct === 'a' ? 'class="correct-answer"' : '')}>${questionObj.a}</li>
                     <li ${questionObj.selected === 'b' ? 'class="selected-answer"' : (questionObj.correct === 'b' ? 'class="correct-answer"' : '')}>${questionObj.b}</li>
                     <li ${questionObj.selected === 'c' ? 'class="selected-answer"' : (questionObj.correct === 'c' ? 'class="correct-answer"' : '')}>${questionObj.c}</li>
-                    <li ${questionObj.selected === 'd' ? 'class="selected-answer"' : (questionObj.correct === 'd' ? 'class="correct-answer"' : '')}>${questionObj.d}</li>
+                    <li class="last" ${questionObj.selected === 'd' ? 'class="selected-answer"' : (questionObj.correct === 'd' ? 'class="correct-answer"' : '')}>${questionObj.d}</li>
                 </ol>
             `;
 
